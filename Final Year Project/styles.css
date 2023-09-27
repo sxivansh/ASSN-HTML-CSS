@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #3498db; 
+    background-color: #239cec; 
     font-family: Arial, sans-serif;
 }
 
@@ -76,7 +76,7 @@ nav{
 }
 
 .menu a:hover {
-    color: #a6ff00;
+    color: #9ef302;
 }
 
 .register a{
