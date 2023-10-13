@@ -1,0 +1,317 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; /* Background color for the rest of the page */
+    margin: 0;
+    position: relative;
+
+}
+.footer {
+    width: 100%;
+    background-color: rgb(237 246 255); /* Grey background color for footer content */
+    color: rgb(169 179 189); /* Text color for footer content */
+    text-align: center;
+    padding: 20px; /* Add padding to footer content */
+    margin-top: auto;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    /* z-index: 1; */
+}
+.cut-image {
+    background-image: url(../images/image-removebg-preview.png);
+    position: relative;
+    left: 5%;
+    top: 28vh;
+    height: 41vh;
+    width: 321px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.cut-image::after {
+    background-image: url(../images/image-removebg-preview.png);
+    content: "";
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 477px;
+    height: 639px;
+    display: block;
+    right: -11vw;
+    top: -8vh;
+    z-index: -1;
+}
+
+/* styles for the background SVG */
+.custom-shape-divider-top-1697182267 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697182267 svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 366px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1697182267 .shape-fill {
+    fill:#86c4fe;
+}
+/* styles for the background SVG2 */
+
+.paragraph{
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+.paragraph h2{
+    margin-left: 34.5rem;
+    color: rgb(135 143 149);
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+
+        /* button css */
+        .store-button {
+            
+            height: 67px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0077B5;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        
+        .button-container{
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 33px;
+            left: 40%;
+            margin-top: 27px;
+        }
+        
+        /* Style for the Play Store button */
+        .market-btn {
+            display: inline-block;
+            padding: 0.3125rem 0.875rem;
+            padding-left: 2.8125rem;
+            -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+            transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+            border-radius: 5px;
+            background-position: center left 0.75rem;
+            background-color: #000000;
+            /* background-size: 1.5rem 1.5rem; */
+            /* background-repeat: no-repeat; */
+            text-decoration: none;
+            
+        }
+        .google-btn{
+    width: 26px; /* Adjust the size as needed */
+    height: 26px; /* Adjust the size as needed */
+    image-rendering: pixelated;
+        }
+        .playLogo{
+            display: flex;
+            margin-left: -38px;
+        }
+        .market-button-title{
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        .market-btn .market-button-title {
+            display: block;
+            color: #ffff;
+            font-size: 1rem;
+        }
+        .market-btn .market-button-subtitle {
+            display: block;
+            color: #ffffff;
+            font-size: 0.5rem;
+            letter-spacing: 0.5px;
+            margin-bottom: -3px;
+            margin-top: 2px;
+            margin-left: -5px;
+        }
+        #Go{
+            font-weight: bolder;
+        }
+        #Pl{
+            font-weight: 100;
+        }
+        /* Style for the App Store button */
+        .apple-buttn {
+            display: inline-block;
+            padding: 0.3125rem 0.875rem;
+            padding-left: 2.8125rem;
+            -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+            transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+            border-radius: 5px;
+            background-position: center left 0.75rem;
+            background-color: #000000;
+            text-decoration: none;
+            padding-bottom: 6px;
+            
+        }
+        .ctowud{
+            font-size: 31px;
+            margin-left: -27px;
+          }
+          .apple-button-title{
+            display: block;
+            color: #ffff;
+            font-size: 1.1rem;
+            margin-bottom: 3px;
+          }
+          .apple-button-subtitle{
+            display: block;
+            color: #ffffff;
+            font-size: 0.5rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            margin-top: 3px;
+            margin-left: 2px;
+          }
+      .D-A{
+        display: inline-block;
+        margin-left: 2px;
+      }
+     
+        /* Media query to stack buttons vertically on smaller screens */
+        @media (max-width: 600px) {
+            .button-container {
+                text-align: center;
+            }
+        
+            .store-button {
+                display: block;
+                margin-bottom: 10px; /* Add spacing between stacked buttons */
+            }
+        }
+        
+        
+        
+        
+.crugo-logo{
+    color: rgb(135 143 149);
+    margin-top: 50px;
+  
+}    
+.p&t{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.terms-C{
+    padding: 10px;
+}
+.about-us{
+    margin-top: 55px;
+}
+.about{
+   margin-top: 15px;
+    margin-left: 91px;
+    list-style-type: none;
+}
+.about li{
+    position:relative;
+
+}
+.about li::before{
+    position: absolute;
+    content: "\00b7";
+    font-size: 70px;
+    height: 20px;
+    top: -167%;
+    left: -20%;
+}
+
+.A{
+    font-weight: bolder;
+}
+.L2{
+    margin-top: 89px;
+}
+.lorem{
+    list-style-type: none;
+}
+.lorem  li{
+    position: relative;
+
+
+}
+.lorem li::before{
+    position: absolute;
+    content: "\00b7";
+    font-size: 70px;
+    height: 20px;
+    top: -167%;
+    left: -20%;
+}
+.Find-us-in {
+    
+    align-items: center; /* Center content vertically */
+    margin-top: 55px;
+    font-weight: bolder;
+
+}
+.S{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+.Up{
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.S p{
+    margin-left: 89px;
+    font-size: 12px;
+
+}
+.K{
+    padding: 21px;
+}
+.down{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 9px;
+}
+#T{
+    margin-right: 75px;
+    padding: 20px;
+}
+.D{
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+#Q{
+    margin-right: 70px;
+}
+
