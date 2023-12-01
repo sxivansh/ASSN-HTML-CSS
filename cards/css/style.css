@@ -1,144 +1,135 @@
 *{
  box-sizing: border-box;
 }
-.card-container{
-   
-    width: 45%;
-   
-}
 
-
-body {
-/* 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-   
-    justify-content: center; */
-  /* Center vertically */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
-    place-items: center; 
-    background-color: rgb(244 249 253);
-    height: 96vh;
- 
-   margin-top: 7px;
-
-}
 .heading{
-    color: rgb(101 102 107)
+  color: rgb(101 102 107);
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 98px;
+  margin-bottom: 125px;
 }
-.left{
-    position: relative;
-    right: 2%;
+.heading-text{
+margin-right: 30px;
 }
-.right{
-    position: relative;
-    left: 2%;
+.column-1{
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
-.heading{
-    margin-top: 80px;
+.column-2{
+     
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+.column-3{
+     
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+.column-4{
+     
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+.column-1{
+  float: left;
+  width: 102%;
+  padding: 10px;
+}
+.column-2{
+  float: left;
+  width: 102%;
+  padding: 10px;
+}
+.column-3{
+  float: left;
+  width: 102%;
+  padding: 10px;
+}
+.column-4{
+  float: left;
+  width: 102%;
+  padding: 10px;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 21px;
+}
+.box{
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  justify-items: center;
 }
 .profile-name{
-    font-size: 1rem;
-    line-height: 0.8;
-    letter-spacing: 0.6px;
-    opacity: 0.8;
-    margin:0px;
-    color: rgb(108 107 112);
-    
-
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+  margin: 0px;
+  color: rgb(108 107 112);
 }
 .profile-position{
-    /* margin: 0; */
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-   opacity: 0.5;
-   margin: 0px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  opacity: 0.5;
+  margin: 0px;
 }
-.profile-body{
-    opacity: 0.5;
+.profile-image{
+  border-radius: 50%;
+    width: 17%;
+    margin-left: 11px;
+    margin-top: 7px;
+    position: relative;
+}
+.name-position{
+  display: flex;
+  flex-direction: column;
+  margin-left: 68px;
+  margin-top: -45px;
+}
+.profile-text{
+  opacity: 0.5;
     font-weight: 300;
     margin-bottom: 0;
     font-size: 0.7rem;
     line-height: 1.5rem;
-    text-align: left;
-
+    text-align: justify;
+    width: 247px;
+    margin-left: 15px;
+    margin-top: 29px;
 }
-/* .profile-body:after{
-    content: "";
-  display: inline-block;
-  width: 100%;
-} */
-.profile-image{
-    border-radius: 50%;
-    position: relative;
-    top: 10%;
-   
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    justify-items: center;
-    margin: 16px;
-    
-
-  }
-  .profile-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      background-color: white;
-      padding: 1em;
-    margin-bottom: 30px;
-
-    
-  }
-.name-position{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1rem;
-   margin-bottom: 20px;
-}
-
-
-  @media only screen and (max-width: 600px) {
-
-        .box {
-            grid-template-columns: 1fr;
-        }
-
-        .profile-card{
-            width: 70%;
-        }
-    }
-    @media (max-width: 1130px){
-        .card-container{
-            width: 80%;
-        }
-    }
-  @media (min-width: 768px) {
-      .profile-card {
-        flex-direction: row;
-      }
-      
-      .profile-main{
-        text-align: left;
-       
+@media only screen and (min-width: 600px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
 
+  }
+  .heading {
+    margin-top: 110px;
+    margin-bottom: 100px;
+  }
   
+}
+@media only screen and (max-width: 550px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
