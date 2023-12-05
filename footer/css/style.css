@@ -6,56 +6,44 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #ffffff; /* Background color for the rest of the page */
-    margin: 0;
     position: relative;
+    min-height: 100vh;
+    background-color: #ffffff;
+    max-width: 100%;
+   overflow-x: hidden;
+   margin: 0;
 
 }
 .footer {
-    width: 100%;
-    background-color: rgb(237 246 255); /* Grey background color for footer content */
-    color: rgb(169 179 189); /* Text color for footer content */
+    max-width: 100%;
+    background-color: rgb(237 246 255);
+    color: rgb(169 179 189);
     text-align: center;
-    padding: 20px; /* Add padding to footer content */
-    margin-top: auto;
+    padding: 20px;
     display: flex;
-    position: absolute;
-    bottom: 0%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 45px;
-    /* z-index: 1; */
-}
-.cut-image {
-    background-image: url(../images/image-removebg-preview.png);
     position: relative;
-    left: 5%;
-    top: 28vh;
-    height: 41vh;
-    width: 321px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    z-index: 0;
+    justify-content: space-around;
+    padding-bottom: 45px;
+    margin-bottom: 0px;
+}
+/* cut image styling */
+.two-screenshots{
+    position: relative;
+    top: 208px;
+    left: 31px;
+}
+.cut-image_one{
+    position: absolute;
+    top: 61px;
+    width: 258px;
+}
+.cut-image_two{
+    position: relative;
+    left: 9%;
+    width: 340px;
 }
 
-.cut-image::after {
-    background-image: url(../images/image-removebg-preview.png);
-    content: "";
-    position: relative;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    width: 477px;
-    height: 639px;
-    display: block;
-    right: -11vw;
-    top: -8vh;
-    z-index: -1;
-}
+
 
 /* styles for the background SVG */
 .custom-shape-divider-top-1697182267 {
@@ -70,9 +58,10 @@ body {
 .custom-shape-divider-top-1697182267 svg {
     position: relative;
     display: block;
-    width: calc(114% + 1.3px);
-    height: 366px;
+    width: calc(100% + 1.3px);
+    height: 473px;
     transform: rotateY(180deg);
+    overflow-x: hidden;
 }
 
 .custom-shape-divider-top-1697182267 .shape-fill {
@@ -82,7 +71,7 @@ body {
 
 .paragraph{
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 6px;
     
 }
 .paragraph h2{
@@ -93,6 +82,11 @@ body {
 }
 
         /* button css */
+        .heading-buttons-sub{
+            margin-left: 49px;
+            margin-bottom: 41px;
+        }
+        
         .store-button {
             
             height: 67px;
@@ -110,9 +104,10 @@ body {
             position: relative;
             display: flex;
             flex-wrap: nowrap;
-            gap: 33px;
-            left: 40%;
-            margin-top: 27px;
+            gap: 24px;
+
+            transform: translateX(41%);
+            padding-top: 11px;
         }
         
         /* Style for the Play Store button */
@@ -201,19 +196,6 @@ body {
         margin-left: 2px;
       }
      
-        /* Media query to stack buttons vertically on smaller screens */
-        @media (max-width: 600px) {
-            .button-container {
-                text-align: center;
-            }
-        
-            .store-button {
-                display: block;
-                margin-bottom: 10px; /* Add spacing between stacked buttons */
-            }
-        }
-        
-        
         
         
 .crugo-logo{
